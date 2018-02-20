@@ -70,9 +70,8 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80600000
-BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom user_debug=31
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom user_debug=31  androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := m7_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
@@ -91,9 +90,9 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 
 # SELinux
--include device/qcom/sepolicy/sepolicy.mk
+#-include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += device/htc/m7-common/sepolicy
+#BOARD_SEPOLICY_DIRS += device/htc/m7-common/sepolicy
 
 # Wifi
 BOARD_HOSTAPD_DRIVER             := NL80211
