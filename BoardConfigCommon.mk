@@ -70,6 +70,7 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80600000
+BOARD_KERNEL_IMAGE_NAME = zImage
 BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom user_debug=31
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
@@ -87,7 +88,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
-BOARD_PROVIDES_LIBRIL := true
+# BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 
 # SELinux
