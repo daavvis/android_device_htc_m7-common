@@ -47,7 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SdcardFS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.sdcardfs=true
+    ro.sys.sdcardfs=false
 
 # Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
