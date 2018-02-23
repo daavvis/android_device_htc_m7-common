@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.lineage.hardware;
+package org.cyanogenmod.hardware;
 
-import org.lineage.internal.util.FileUtils;
+import org.cyanogenmod.internal.util.FileUtils;
 
 public class VibratorHW {
 
