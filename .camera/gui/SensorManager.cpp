@@ -26,7 +26,7 @@
 #include <binder/IBinder.h>
 #include <binder/IServiceManager.h>
 
-#include <gui/ISensorServer.h>
+/*#include <gui/ISensorServer.h>*/
 #include <gui/ISensorEventConnection.h>
 #include "gui/Sensor.h"
 #include "gui/SensorManager.h"

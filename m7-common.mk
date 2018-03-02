@@ -44,23 +44,23 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
 
 # Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl-legacy \
-    camera.device@1.0-impl-legacy \
-    camera.msm8960 \
-    libcamera_shim \
-    Snap
+#PRODUCT_PACKAGES += \
+#    android.hardware.camera.provider@2.4-impl-legacy \
+#    camera.device@1.0-impl-legacy \
+#    camera.msm8960 \
+#    libcamera_shim \
+#    Snap
 
 # Gello
 PRODUCT_PACKAGES += \
     Gello
 
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8960
+## GPS
+#PRODUCT_PACKAGES += \
+#    gps.msm8960
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
 
 # IDC
 PRODUCT_COPY_FILES += \
